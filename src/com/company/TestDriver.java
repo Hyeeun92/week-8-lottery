@@ -13,7 +13,11 @@ public class TestDriver {
 
     public static void testLottery(){
         Lottery L1 = new Lottery(5);
+        System.out.println(" ");
+        }
+
+
 
 
     }
-}
+

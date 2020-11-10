@@ -6,31 +6,26 @@ import java.util.Random;
 
 public class Lottery extends Panel {
 
-    Random R = new Random();
-    private int[] lotto = new int[6];
-    int check[] = new int[50];
-
     public Lottery(int quantity) {
+
         setQuantity(quantity);
-
-        for (int i = 0; i < quantity; i++)
-            for (int j = 0; j < 6; j++) {
-                lotto[j] = R.nextInt(50) + 1;
-
-                if (check[lotto[j]] == 0) {
-                    check[lotto[j]] = 1;
-                } else
-                    i--;
-            }
+       int[] iArray = new int[6];
 
 
-        System.out.println(lotto);
+       for (int a = 0; a < quantity; a++) {
+           System.out.println(" ");
+           for (int i = 0; i < iArray.length; i++) {
+               iArray[i] = (int) (Math.random() * 50);
+               for (int j = 0; j < i; j++) {
+                   if (iArray[i] == iArray[j]) {
+                       i--;
+                   }
+               }
+           }
+
+           for (int i = 0; i < iArray.length; i++) {
+               System.out.print(iArray[i] + " ");
+           }
+       }
     }
-
 }
-
-
-
-
-
-

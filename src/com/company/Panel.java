@@ -18,7 +18,7 @@ public abstract class Panel {
 
     @Override
     public String toString(){
-        return String.format("Total price is : %d", getTotalValue());
+        return String.format("Total price is : %d euro", getTotalValue());
     }
 
 

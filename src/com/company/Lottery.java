@@ -16,7 +16,7 @@ public class Lottery extends Panel {
            for (int i = 0; i < iArray.length; i++) {
                iArray[i] = (int) (Math.random() * 50);
                for (int j = 0; j < i; j++) {
-                   if (iArray[i] == iArray[j]) {
+                   if (iArray[i] == iArray[j] || iArray[i]==0) {
                        i--;
                    }
                }

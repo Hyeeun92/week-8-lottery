@@ -1,5 +1,7 @@
 package com.company;
 
+import java.io.PrintStream;
+
 public class TestDriver {
 
 
@@ -12,9 +14,10 @@ public class TestDriver {
 
 
     public static void testLottery(){
-        Lottery L1 = new Lottery(5);
-        System.out.println(" ");
-        }
+        Lottery L1 = new Lottery(7);
+        System.out.println(L1.toString());
+
+    }
 
 
 

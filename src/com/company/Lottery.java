@@ -13,7 +13,6 @@ public class Lottery extends Panel {
 
 
        for (int a = 0; a < quantity; a++) {
-           System.out.println(" ");
            for (int i = 0; i < iArray.length; i++) {
                iArray[i] = (int) (Math.random() * 50);
                for (int j = 0; j < i; j++) {
@@ -26,6 +25,7 @@ public class Lottery extends Panel {
            for (int i = 0; i < iArray.length; i++) {
                System.out.print(iArray[i] + " ");
            }
+           System.out.println("");
        }
     }
 }

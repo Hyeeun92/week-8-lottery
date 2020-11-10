@@ -3,7 +3,6 @@ package com.company;
 public abstract class Panel {
 
     private int quantity;
-    private int Price;
 
     public int getQuantity() {
         return quantity;
@@ -13,17 +12,14 @@ public abstract class Panel {
         this.quantity = quantity;
     }
 
-    public int getPrice() {
-        return Price;
-    }
-
-    public void setPrice(){
-        this.Price = quantity*2;
+    public int getTotalValue(){
+        return 2*quantity;
     }
 
     @Override
     public String toString(){
-        return String.format("Total price is %d" ,Price);
+        return String.format("Total price is : %d", getTotalValue());
     }
+
 
 }
